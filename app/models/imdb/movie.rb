@@ -1,16 +1,19 @@
 ############# IMDB
 
 class Movie < Media
-     @@all = []
     attr_reader :title
-     def self.all
+     
+    @@all = []
+    
+    def self.all
         @@all
     end
-        def self.most_actors
-            self.all.max_by { |movie| movie.actors.count }
-        end
 
-        def initialize(title)
+    def self.most_actors
+        self.all.max_by { |movie| movie.actors.count }
+    end
+
+    def initialize(title)
         @title = title
         @@all << self
     end
