@@ -19,10 +19,10 @@ class Ingredient
     end
 
     def bakery
-        dessert.map {|dessert| dessert.bakery }
+        dessert.map {|dessert| dessert.bakery }.uniq
     end
 
     def dessert
-        Dessert.all.select { |dessert| dessert.ingredients == self }
+        Dessert.all.select { |dessert| dessert.ingredients.include?(self) }
     end
 end

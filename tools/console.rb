@@ -72,5 +72,92 @@ aub_scone = Dessert.new(aubergine, "scone", shortening, whole_wheat_flour,flour,
 
 ########## LYFT ###################
 
+# driver
+
+minnie = Driver.new("Minnie")
+tony = Driver.new("Tony")
+tiny = Driver.new("Tiny")
+muriel = Driver.new("Muriel")
+
+# passengers
+
+adam = Passenger.new("Adam")
+alex = Passenger.new("Alex")
+beth = Passenger.new("Beth")
+lucas = Passenger.new("Lucas")
+
+# rides
+
+to_queens = Ride.new(tony, adam, 40)
+to_queens2 = Ride.new(tiny, adam, 43)
+to_brooklyn = Ride.new(minnie, alex, 60)
+to_brooklyn2 = Ride.new(minnie, beth, 67)
+staten_island = Ride.new(muriel, lucas, 130)
+
+########## IMDB
+
+# movies
+simpsons_movie = Movie.new("The Simpsons Movie")
+avengers = Movie.new("Avengers")
+charlie_factor = Movie.new("Charlie and the Chocolate Factory")
+
+# shows
+
+simpsons_tv = Show.new("Simpsons")
+jeopardy = Show.new("Jeopardy")
+
+# actors
+# breaking down simpsons actors
+dan = Actor.new("Dan Castellaneta")
+nancy = Actor.new("Nancy Cartwright")
+yeardley = Actor.new("Yeardley Smith")
+#jeopardy actor
+trebek = Actor.new("Alex Trebek")
+
+#avengers actors
+downey = Actor.new("Robert Downey Jr.")
+evans = Actor.new("Chris Evans")
+scarjo = Actor.new("Scarlett Johansson")
+jackson = Actor.new("Samuel L. Jackson")
+
+#charlie actors
+gene = Actor.new("Gene Wilder")
+albertson = Actor.new("Jack Albertson")
+dawn_cole = Actor.new("Julie Dawn Cole")
+
+#episodes
+
+simpsons_ep1 = Episode.new("Simpsons Roastin on an Open Fire", simpsons_tv)
+simpsons_ep2 = Episode.new("Bart the Genius", simpsons_tv) 
+simpsons_ep3 = Episode.new("Homer's Odyssey",simpsons_tv)
+jeopary_ep1 = Episode.new("A", jeopardy)
+jeopary_ep2 = Episode.new("L", jeopardy)
+jeopary_ep3 = Episode.new("E", jeopardy)
+jeopary_ep4 = Episode.new("X", jeopardy)
+
+#simpsons  characters
+homer_tv1 = Character.new("Homer", dan, simpsons_ep1)
+homer_tv2 = Character.new("Homer", dan, simpsons_ep2)
+homer_tv3 = Character.new("Homer", dan, simpsons_ep3)
+homer_movie = Character.new("Homer", dan, simpsons_movie)
+bart_tv1 = Character.new("Bart", nancy, simpsons_ep1)
+bart_tv2 = Character.new("Bart", nancy, simpsons_ep2)
+bart_tv3 = Character.new("Bart", nancy, simpsons_ep3)
+bart_movie = Character.new("Bart", nancy, simpsons_movie)
+lisa_tv1 = Character.new("Lisa", yeardley, simpsons_ep1)
+lisa_tv2 = Character.new("Lisa", yeardley, simpsons_ep2)
+lisa_tv3 = Character.new("Lisa", yeardley, simpsons_ep3)
+lisa_movie = Character.new("Lisa", yeardley, simpsons_movie)
+#jeopardy character
+alex_trebek1 = Character.new("Alex Trebek", trebek, jeopardy)
+alex_trebek2 = Character.new("Alex Trebek", trebek, jeopardy)
+alex_trebek3 = Character.new("Alex Trebek", trebek, jeopardy)
+alex_trebek4 = Character.new("Alex Trebek", trebek, jeopardy)
+
+ironman = Character.new("Ironman", downey, avengers)
+c_america = Character.new("Captain America", evans, avengers)
+c_america = Character.new("Captain America", evans, avengers)
+c_america = Character.new("Captain America", evans, avengers)
+c_america = Character.new("Captain America", evans, avengers)
 
 binding.pry
