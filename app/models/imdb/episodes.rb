@@ -13,4 +13,8 @@ class Episode
         @show = show
         @@all << self
     end
+
+    def characters
+        
+    end
 end
