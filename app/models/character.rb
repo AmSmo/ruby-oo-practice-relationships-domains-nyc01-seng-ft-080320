@@ -10,7 +10,8 @@ class Character
     end
 
     def self.most_appearances
-        self.all.max_by {|a| a.count(self)}
+       appearances = self.all.inject(Hash.new(0)) {|h,v| h[v.char_name]+=1;h}
+       appearances.max_by { |char, apps| apps}
     end
    
 

@@ -158,6 +158,6 @@ ironman = Character.new("Ironman", downey, avengers)
 c_america = Character.new("Captain America", evans, avengers)
 c_america = Character.new("Captain America", evans, avengers)
 c_america = Character.new("Captain America", evans, avengers)
-c_america = Character.new("Captain America", evans, avengers)
+
 
 binding.pry
