@@ -15,16 +15,20 @@ class Location
         @@all << self
     end
     
+    def training_sessions
+        TrainerShift.all.select {|tl| tl.location == self}
+    end
+
     def trainers
-        TrainingSession.all.select {|tl| tl.location == self}
+        training_sessions.map {|sesh| sesh.trainer }
     end
 
     def clients
-        trainers.clients
+        training_sessions.map { |session| session.client }
     end
 
     def client_count
-        trainers.sum{|trainer| trainer.client_count}
+        clients.compact.uniq.length
     end
 
 end
